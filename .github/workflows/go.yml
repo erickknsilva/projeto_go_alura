@@ -34,7 +34,7 @@ jobs:
       run: go build main main.go
 
     - name: Projeto compilado
-      run: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: Projeto compilado
         path: main
